@@ -62,7 +62,7 @@ fun ejercicioBasico5(){
 
 
 
-// ejercici5 v2
+// Ejercicio5 v2
 /*
 Ejercicio 4.5¶
 Crear una clase Tiempo, que refleja las horas de un día, es decír, desde 00:00:00 hasta 23:59:59, con atributos hora, minuto y segundo, que pueda ser construida indicando los tres atributos, sólo hora y minuto o sólo la hora (si no se indica, el valor de minuto o segundo será 0).
@@ -103,7 +103,7 @@ Añadir un nuevo método esMenorQue(t:Tiempo):Boolean, que devuelve true si el t
  * @param minuto El minuto del tiempo (0-59).
  * @param segundo El segundo del tiempo (0-59).
  */
-class Tiempo(var hora: Int, var minuto: Int = 0, var segundo: Int = 0){
+class Tiempo(private var hora: Int, private var minuto: Int = 0, private var segundo: Int = 0){
 
 
     init {
@@ -307,6 +307,7 @@ class Tiempo(var hora: Int, var minuto: Int = 0, var segundo: Int = 0){
         return "$horaF:$minF:$segF"
     }
 }
+
 
 /**
  * Función que solicita un valor entero por teclado comprobando que sea positivo y valido.
